@@ -1,3 +1,2 @@
 #!/bin/bash
-pip install -r requirements.txt
-python app.py
+gunicorn app:app --bind 0.0.0.0:$PORT
